@@ -299,7 +299,7 @@ body {
 .home-left {
   width: 220px;
   min-width: 180px;
-  background: #fff;
+  /* background: #fff; */
   padding: 20px 0;
 }
 .banner-slider {
@@ -742,10 +742,41 @@ small {
   background-color: lime;
   color: #fff;
 }
-#banner img {
-  /* width: 100%;
-    height: 100%; */
+
+.home-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+.home-left ul li {
+  position: relative;
+}
+.home-left ul li .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 160px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+.home-left ul li.has-submenu:hover > .submenu {
+  display: block;
+}
+.home-left ul li .submenu li {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+.home-left ul li .submenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.home-left ul li .submenu li a:hover {
+  background: #f5f5f5;
+}
+
 .time {
   display: flex;
 }
@@ -931,6 +962,97 @@ small {
 #img-details img {
   width: 500px;
 }
+#account-details {
+  display: flex;
+  margin-top: 100px;
+}
+#account-details .details {
+  width: 40%;
+}
+#account-details .details h4 {
+  font-size: 13px;
+  line-height: 35px;
+}
+#account-details .details ul {
+  list-style: none;
+  padding: 0;
+}
+#account-details .details ul li {
+  font-size: 12px;
+  padding: 10px 10px 0;
+}
+#account-details .details ul li a:hover {
+  color: #ff0000;
+  transition: 0.5s ease;
+}
+
+#account-details .details ul li a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-weight: 100;
+}
+
+#form-account{
+  width: 70%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: rgba(32, 32, 32, 0.03);
+}
+#form-account h4{
+  color: #ff0000;
+}
+#form-account p{
+  font-size: 13px;
+}
+#form-account form .form-input{
+  display: flex;
+}
+#form-account .form-input div{
+  margin: 0 0 0 12px;
+  width: 100%;
+  
+}
+#form-account .form-input div input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f4f4f4;
+  border: none;
+
+  
+}
+#form-account .form-password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+   margin: 0 0 0 12px;
+  width: 100%;
+}
+#form-account .form-password input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f4f4f4;
+  border: none;
+  
+}
+#form-account form .button{
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#form-account form .btn1{
+  color: #fff;
+  background-color: red;
+}
+
 
 footer {
   display: flex;
