@@ -970,15 +970,15 @@ small {
   width: 40%;
 }
 #account-details .details h4 {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 35px;
 }
 #account-details .details ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 #account-details .details ul li {
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px 10px 0;
 }
 #account-details .details ul li a:hover {
